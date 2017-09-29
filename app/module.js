@@ -6,5 +6,5 @@ angular.module('lawfactoClient', ['ui.router', 'common', 'dashboard']).config(fu
         component: 'dashboard'
     });
 }).run(function () {
-    console.log('module');
+    console.log('module loaded');
 });
