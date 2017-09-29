@@ -5,7 +5,11 @@
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
     "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-ng-annotate": "^2.0.0",
     "gulp-sourcemaps": "^2.6.1",

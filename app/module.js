@@ -5,6 +5,6 @@ angular.module('lawfactoClient', ['ui.router', 'common', 'dashboard']).config(fu
         url: '/dashboard',
         component: 'dashboard'
     });
-}).run(function () {
-    console.log('module loaded');
+}).run(() => {
+    console.log('module');
 });
