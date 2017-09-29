@@ -1,3 +1,3 @@
-angular.module('common', []).run(function () {
+angular.module('common', []).run(() => {
     console.log('common');
 });

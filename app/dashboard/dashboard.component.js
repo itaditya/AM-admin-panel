@@ -1,6 +1,6 @@
 angular.module('dashboard').component('dashboard', {
   templateUrl:  'app/dashboard/dashboard.template.html',
-  controller: function() {
+  controller: () => {
     console.log('dashboard');
   }
 })

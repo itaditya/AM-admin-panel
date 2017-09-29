@@ -1,8 +1,8 @@
 angular.module('notice').component('getNotice', {
   templateUrl: 'app/dashboard/notice/getNotice/getNotice.template.html',
   controllerAs: 'vm',
-  controller: function (validateService) {
-    var vm = this;
+  controller: (validateService) => {
+    const vm = this;
     console.log('notice');
     $('select').material_select();
     $('input#autocomplete-state-input').autocomplete({
@@ -13,7 +13,7 @@ angular.module('notice').component('getNotice', {
         "Mumbai": null
       },
       limit: 20,
-      onAutocomplete: function (val) {
+      onAutocomplete: (val) => {
         console.log(val);
       },
       minLength: 2
@@ -26,7 +26,7 @@ angular.module('notice').component('getNotice', {
         "Mumbai High Court": null
       },
       limit: 20,
-      onAutocomplete: function (val) {
+      onAutocomplete: (val) => {
         console.log(val);
       },
       minLength: 2
