@@ -24,7 +24,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "angular-http-server"
+    "start": "angular-http-server",
+    "deploy": "gulp build && surge"
   },
   "repository": {
     "type": "git",
