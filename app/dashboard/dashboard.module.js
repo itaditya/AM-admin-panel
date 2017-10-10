@@ -1,4 +1,4 @@
-angular.module('dashboard', ['notice']).config(($stateProvider) => {
+angular.module('dashboard', ['notice']).config($stateProvider => {
   $stateProvider.state('dashboard.notice', {
     abstract: true,
     url: '/notice',

@@ -37,8 +37,11 @@ gulp.task('dev', () => {
 });
 gulp.task('build', () => {
   gulp.src(paths.scripts)
+  .pipe(babel({
+    presets: ['env']
+  }))
   .pipe(sort(fileOrder))
-  // .pipe(sourcemaps.init())
+  .pipe(sourcemaps.init())
   .pipe(concat("app.js"))
   .pipe(ngAnnotate())
   .pipe(uglify())
