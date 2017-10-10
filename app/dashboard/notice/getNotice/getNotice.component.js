@@ -7,29 +7,30 @@ angular.module('notice').component('getNotice', {
     $('select').material_select();
     $('input#autocomplete-state-input').autocomplete({
       data: {
-        "Delhi": null,
-        "Uttar Pradesh": null,
-        "NCR": null,
-        "Mumbai": null
+        'Delhi': null,
+        'Uttar Pradesh': null,
+        'NCR': null,
+        'Mumbai': null,
+        'China': null,
       },
       limit: 20,
       onAutocomplete(val) {
         console.log(val);
       },
-      minLength: 2
+      minLength: 2,
     });
     $('input#autocomplete-court-input').autocomplete({
       data: {
-        "Delhi High Court": null,
-        "Uttar Pradesh High Court": null,
-        "NCR High Court": null,
-        "Mumbai High Court": null
+        'Delhi High Court': null,
+        'Uttar Pradesh High Court': null,
+        'NCR High Court': null,
+        'Mumbai High Court': null,
       },
       limit: 20,
       onAutocomplete(val) {
         console.log(val);
       },
-      minLength: 2
+      minLength: 2,
     });
-  }
+  },
 })

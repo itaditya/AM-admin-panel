@@ -6,6 +6,7 @@ const uglify = require('gulp-uglify');
 const ngAnnotate = require('gulp-ng-annotate');
 const path = require('path');
 const babel = require('gulp-babel');
+const eslint = require('gulp-eslint');
 
 const paths = {
   scripts: './app/**/*.js',
@@ -26,6 +27,9 @@ gulp.task('default', ['dev', 'watch']);
 gulp.task('watch', () =>  gulp.watch(paths.scripts, ['dev']))
 gulp.task('dev', () => {
   gulp.src(paths.scripts)
+  .pipe(eslint())
+  .pipe(eslint.format())
+  // .pipe(eslint.failAfterError())
   .pipe(babel({
     presets: ['env']
   }))
